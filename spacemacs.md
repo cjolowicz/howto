@@ -77,18 +77,18 @@
 
 ### Numbers
 
-| Key    | Mnemonic   | Description                                                     | Function                 |
-| ------ | --------   | --------------------------------------------------------------- | ------------------------ |
-| 0      |            |                                                                 |                          |
-| 1      |            |                                                                 |                          |
-| 2      |            |                                                                 |                          |
-| 3      |            |                                                                 |                          |
-| 4      |            |                                                                 |                          |
-| 5      |            |                                                                 |                          |
-| 6      |            |                                                                 |                          |
-| 7      |            |                                                                 |                          |
-| 8      |            |                                                                 |                          |
-| 9      |            |                                                                 |                          |
+| Key   | Mnemonic | Description                                           | Function                                        |
+| :---: | -------- | ----------------------------------------------------- | ------------------------                        |
+| `0`   | *0*      | Move the cursor to the beginning of the current line. | `evil-digit-argument-or-evil-beginning-of-line` |
+| `1`   | *1*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
+| `2`   | *2*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
+| `3`   | *3*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
+| `4`   | *4*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
+| `5`   | *5*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
+| `6`   | *6*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
+| `7`   | *7*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
+| `8`   | *8*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
+| `9`   | *9*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
 
 ### Punctuation
 
