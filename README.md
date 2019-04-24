@@ -1,0 +1,3 @@
+# howto
+
+- [spacemacs](spacemacs.md)
