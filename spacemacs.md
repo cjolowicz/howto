@@ -1,3 +1,14 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [spacemacs](#spacemacs)
+    - [Key bindings](#key-bindings)
+        - [Lowercase letters](#lowercase-letters)
+        - [Uppercase letters](#uppercase-letters)
+        - [Numbers](#numbers)
+        - [Punctuation](#punctuation)
+
+<!-- markdown-toc end -->
 # spacemacs
 
 ## Key bindings
@@ -35,34 +46,34 @@
 
 ### Uppercase letters
 
-| Key    | Mnemonic | Description                                                     | Function                   |
-| ------ | -------- | --------------------------------------------------------------- | ------------------------   |
-| A      | *append* | Switch to Insert state at the end of the current line.          | `evil-append-line`         |
-| B      | *back*   | Move the cursor to the beginning of the COUNT-th previous WORD. | `evil-backward-WORD-begin` |
-| C      |          |                                                                 |                            |
-| D      |          |                                                                 |                            |
-| E      |          |                                                                 |                            |
-| F      |          |                                                                 |                            |
-| G      |          |                                                                 |                            |
-| H      |          |                                                                 |                            |
-| I      |          |                                                                 |                            |
-| J      |          |                                                                 |                            |
-| K      |          |                                                                 |                            |
-| L      |          |                                                                 |                            |
-| M      |          |                                                                 |                            |
-| N      |          |                                                                 |                            |
-| O      |          |                                                                 |                            |
-| P      |          |                                                                 |                            |
-| Q      |          |                                                                 |                            |
-| R      |          |                                                                 |                            |
-| S      |          |                                                                 |                            |
-| T      |          |                                                                 |                            |
-| U      |          |                                                                 |                            |
-| V      |          |                                                                 |                            |
-| W      |          |                                                                 |                            |
-| X      |          |                                                                 |                            |
-| Y      |          |                                                                 |                            |
-| Z      |          |                                                                 |                            |
+| Key    | Mnemonic  | Description                                                     | Function                   |
+| ------ | --------  | --------------------------------------------------------------- | ------------------------   |
+| A      | *append*  | Switch to Insert state at the end of the current line.          | `evil-append-line`         |
+| B      | *back*    | Move the cursor to the beginning of the COUNT-th previous WORD. | `evil-backward-WORD-begin` |
+| C      | *change*  | Change to end of line.                                          | `evil-change-line`         |
+| D      | *delete*  | Delete to end of line.                                          | `evil-delete-line`         |
+| E      | *end*     | Move the cursor to the end of the COUNT-th next WORD.           | `evil-forward-WORD-end`    |
+| F      | *find*    | Move to the previous COUNT’th occurrence of CHAR.               | `evil-find-char-backward`  |
+| G      |           |                                                                 |                            |
+| H      |           |                                                                 |                            |
+| I      |           |                                                                 |                            |
+| J      |           |                                                                 |                            |
+| K      |           |                                                                 |                            |
+| L      |           |                                                                 |                            |
+| M      |           |                                                                 |                            |
+| N      |           |                                                                 |                            |
+| O      |           |                                                                 |                            |
+| P      |           |                                                                 |                            |
+| Q      |           |                                                                 |                            |
+| R      | *replace* | Enable Replace state. Disable with negative ARG.                | `evil-replace-state`       |
+| S      |           |                                                                 |                            |
+| T      |           |                                                                 |                            |
+| U      |           |                                                                 |                            |
+| V      |           |                                                                 |                            |
+| W      |           |                                                                 |                            |
+| X      |           |                                                                 |                            |
+| Y      |           |                                                                 |                            |
+| Z      |           |                                                                 |                            |
 
 ### Numbers
 
