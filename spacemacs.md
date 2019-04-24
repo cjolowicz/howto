@@ -79,7 +79,7 @@
 
 | Key     | Mnemonic | Description                                           | Function                                        |
 | :-----: | -------- | ----------------------------------------------------- | ----------------------------------------------- |
-| **`0`** | *0*      | Move the cursor to the beginning of the current line. | `evil-digit-argument-or-evil-beginning-of-line` |
+| **`0`** | *bol*    | Move the cursor to the beginning of the current line. | `evil-digit-argument-or-evil-beginning-of-line` |
 | **`1`** | *1*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
 | **`2`** | *2*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
 | **`3`** | *3*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
@@ -92,37 +92,37 @@
 
 ### Punctuation
 
-| Key        | Mnemonic            | Description                                                                                  | Function                             |
-| :--------: | ------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------ |
-| **`!`**    | *shell*             | Execute a shell command.                                                                     | `evil-shell-command`                 |
-| **`@`**    | *macro*             | Execute keyboard macro MACRO, COUNT times.                                                   | `evil-execute-macro`                 |
-| **`#`**    | *find previous*     | Go to the previous occurrence of symbol under point with `auto-highlight-symbol`             | `spacemacs/enter-ahs-backward`       |
-| **`^`**    | *bol*               | Move the cursor to the first non-blank character of the current line.                        | `evil-first-non-blank`               |
-| **`$`**    | *eol*               | Move the cursor to the end of the current line.                                              | `evil-end-of-line`                   |
-| **`%`**    | *jump*              | Find the next item in this line after or under the cursor and jump to the corresponding one. | `evil-jump-item`                     |
-| **`&`**    | *repeat substitute* | Repeat last substitute command.                                                              | `evil-ex-repeat-substitute`          |
-| **`*`**    | *find next*         | Go to the next occurrence of symbol under point with `auto-highlight-symbol`                 | `spacemacs/enter-ahs-forward`        |
-| **`(`**    | *previous sentence* | Move to the previous COUNT-th beginning of a sentence or paragraph.                          | `evil-backward-sentence-begin`       |
-| **`)`**    | *next sentence*     | Move to the next COUNT-th beginning of a sentence or end of a paragraph.                     | `evil-forward-sentence-begin`        |
-| **`-`**    | *previous line*     | Move the cursor COUNT lines up on the first non-blank character.                             | `evil-previous-line-first-non-blank` |
-| **`_`**    | *line*              | Move the cursor COUNT-1 lines down on the first non-blank character.                         | `evil-next-line-1-first-non-blank`   |
-| **`+`**    | *next line*         | Move the cursor COUNT lines down on the first non-blank character.                           | `evil-next-line-first-non-blank`     |
-| **`=`**    | *indent*            | Indent text.                                                                                 | `evil-indent`                        |
-| **`,`**    | *major mode*        | (prefix)                                                                                     |                                      |
-| **(pipe)** |                     |                                                                                              |                                      |
-| **`.`**    |                     |                                                                                              |                                      |
-| **`/`**    |                     |                                                                                              |                                      |
-| **`:`**    |                     |                                                                                              |                                      |
-| **`;`**    |                     |                                                                                              |                                      |
-| **`'`**    |                     | Go to the line of the marker specified by CHAR.                                              | `evil-goto-mark-line`                |
-| **`"`**    |                     | Use REGISTER for the next command.                                                           | `evil-use-register`                  |
-| **`<`**    |                     |                                                                                              |                                      |
-| **`>`**    |                     |                                                                                              |                                      |
-| **`?`**    |                     |                                                                                              |                                      |
-| **`[`**    |                     |                                                                                              |                                      |
-| **`\`**    |                     |                                                                                              |                                      |
-| **`]`**    |                     |                                                                                              |                                      |
-| **`\``**   |                     |                                                                                              |                                      |
-| **`{`**    |                     |                                                                                              |                                      |
-| **`}`**    |                     |                                                                                              |                                      |
-| **`~`**    |                     |                                                                                              |                                      |
+| Key        | Mnemonic             | Description                                                                                  | Function                             |
+| :-------:  | -------------------  | -------------------------------------------------------------------------------------------- | ------------------------------------ |
+| **`\``**   | *goto mark*          | Go to the marker specified by CHAR.                                                          | `evil-goto-mark`                     |
+| **`~`**    | *invert case*        | Invert case of character.                                                                    | `evil-invert-char`                   |
+| **`!`**    | *shell*              | Execute a shell command.                                                                     | `evil-shell-command`                 |
+| **`@`**    | *macro*              | Execute keyboard macro MACRO, COUNT times.                                                   | `evil-execute-macro`                 |
+| **`#`**    | *find previous*      | Go to the previous occurrence of symbol under point with `auto-highlight-symbol`             | `spacemacs/enter-ahs-backward`       |
+| **`^`**    | *bol*                | Move the cursor to the first non-blank character of the current line.                        | `evil-first-non-blank`               |
+| **`$`**    | *eol*                | Move the cursor to the end of the current line.                                              | `evil-end-of-line`                   |
+| **`%`**    | *jump*               | Find the next item in this line after or under the cursor and jump to the corresponding one. | `evil-jump-item`                     |
+| **`&`**    | *repeat substitute*  | Repeat last substitute command.                                                              | `evil-ex-repeat-substitute`          |
+| **`*`**    | *find next*          | Go to the next occurrence of symbol under point with `auto-highlight-symbol`                 | `spacemacs/enter-ahs-forward`        |
+| **`(`**    | *previous sentence*  | Move to the previous COUNT-th beginning of a sentence or paragraph.                          | `evil-backward-sentence-begin`       |
+| **`)`**    | *next sentence*      | Move to the next COUNT-th beginning of a sentence or end of a paragraph.                     | `evil-forward-sentence-begin`        |
+| **`-`**    | *previous line*      | Move the cursor COUNT lines up on the first non-blank character.                             | `evil-previous-line-first-non-blank` |
+| **`_`**    | *line*               | Move the cursor COUNT-1 lines down on the first non-blank character.                         | `evil-next-line-1-first-non-blank`   |
+| **`+`**    | *next line*          | Move the cursor COUNT lines down on the first non-blank character.                           | `evil-next-line-first-non-blank`     |
+| **`=`**    | *indent*             | Indent text.                                                                                 | `evil-indent`                        |
+| **`[`**    | *previous*           | (prefix)                                                                                     |                                      |
+| **`]`**    | *next*               | (prefix)                                                                                     |                                      |
+| **`{`**    | *previous paragraph* | Move to the beginning of the COUNT-th previous paragraph.                                    | `evil-backward-paragraph`            |
+| **`}`**    | *next paragraph*     | Move to the end of the COUNT-th next paragraph.                                              | `evil-forward-paragraph`             |
+| **`\\`**   |                      |                                                                                              |                                      |
+| **(pipe)** |                      |                                                                                              |                                      |
+| **`;`**    |                      |                                                                                              |                                      |
+| **`:`**    |                      |                                                                                              |                                      |
+| **`'`**    |                      | Go to the line of the marker specified by CHAR.                                              | `evil-goto-mark-line`                |
+| **`"`**    |                      | Use REGISTER for the next command.                                                           | `evil-use-register`                  |
+| **`,`**    | *major mode*         | (prefix)                                                                                     |                                      |
+| **`.`**    |                      |                                                                                              |                                      |
+| **`<`**    |                      |                                                                                              |                                      |
+| **`>`**    |                      |                                                                                              |                                      |
+| **`/`**    |                      |                                                                                              |                                      |
+| **`?`**    |                      |                                                                                              |                                      |
