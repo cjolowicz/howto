@@ -94,7 +94,7 @@
 
 | Key        | Mnemonic             | Description                                                                                  | Function                             |
 | :-------:  | -------------------  | -------------------------------------------------------------------------------------------- | ------------------------------------ |
-| **`\``**   | *goto mark*          | Go to the marker specified by CHAR.                                                          | `evil-goto-mark`                     |
+| **\`**     | *goto mark*          | Go to the marker specified by CHAR.                                                          | `evil-goto-mark`                     |
 | **`~`**    | *invert case*        | Invert case of character.                                                                    | `evil-invert-char`                   |
 | **`!`**    | *shell*              | Execute a shell command.                                                                     | `evil-shell-command`                 |
 | **`@`**    | *macro*              | Execute keyboard macro MACRO, COUNT times.                                                   | `evil-execute-macro`                 |
@@ -114,15 +114,15 @@
 | **`]`**    | *next*               | (prefix)                                                                                     |                                      |
 | **`{`**    | *previous paragraph* | Move to the beginning of the COUNT-th previous paragraph.                                    | `evil-backward-paragraph`            |
 | **`}`**    | *next paragraph*     | Move to the end of the COUNT-th next paragraph.                                              | `evil-forward-paragraph`             |
-| **`\\`**   |                      |                                                                                              |                                      |
-| **(pipe)** |                      |                                                                                              |                                      |
-| **`;`**    |                      |                                                                                              |                                      |
-| **`:`**    |                      |                                                                                              |                                      |
-| **`'`**    |                      | Go to the line of the marker specified by CHAR.                                              | `evil-goto-mark-line`                |
-| **`"`**    |                      | Use REGISTER for the next command.                                                           | `evil-use-register`                  |
+| **`\`**    | *holy*               | Execute the next command in Emacs state.                                                     | `evil-execute-in-emacs-state`        |
+| **(pipe)** | *goto column*        | Go to column COUNT on the current line.                                                      | `evil-goto-column`                   |
+| **`;`**    | *repeat find*        | Repeat the last find COUNT times.                                                            | `evil-repeat-find-char`              |
+| **`:`**    | *ex*                 | Enter an Ex command.                                                                         | `evil-ex`                            |
+| **`'`**    | *goto mark*          | Go to the line of the marker specified by CHAR.                                              | `evil-goto-mark-line`                |
+| **`"`**    | *register*           | Use REGISTER for the next command.                                                           | `evil-use-register`                  |
 | **`,`**    | *major mode*         | (prefix)                                                                                     |                                      |
-| **`.`**    |                      |                                                                                              |                                      |
-| **`<`**    |                      |                                                                                              |                                      |
-| **`>`**    |                      |                                                                                              |                                      |
-| **`/`**    |                      |                                                                                              |                                      |
-| **`?`**    |                      |                                                                                              |                                      |
+| **`.`**    | *repeat*             | Repeat the last editing command with count replaced by COUNT.                                | `evil-repeat`                        |
+| **`<`**    | *shift left*         | Shift text from BEG to END to the left.                                                      | `evil-shift-left`                    |
+| **`>`**    | *shift right*        | Shift text from BEG to END to the right.                                                     | `evil-shift-right`                   |
+| **`/`**    | *search forward*     | Starts a forward search.                                                                     | `evil-ex-search-forward`             |
+| **`?`**    | *search backward*    | Starts a backward search.                                                                    | `evil-ex-search-backward`            |
