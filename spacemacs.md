@@ -16,7 +16,7 @@
 ### Lowercase letters
 
 | Key    | Mnemonic     | Description                                                     | Function                   |
-| :----: | --------     | --------------------------------------------------------------- | ------------------------   |
+| :----: | ------------ | --------------------------------------------------------------- | -------------------------- |
 | `a`    | *append*     | Switch to Insert state just after point.                        | `evil-append`              |
 | `b`    | *backward*   | Move the cursor to the beginning of the COUNT-th previous word. | `evil-backward-word-begin` |
 | `c`    | *change*     | Change text from BEG to END with TYPE.                          | `evil-change`              |
@@ -47,7 +47,7 @@
 ### Uppercase letters
 
 | Key    | Mnemonic     | Description                                                                                   | Function                         |
-| :----: | --------     | ---------------------------------------------------------------                               | ------------------------         |
+| :----: | ------------ | --------------------------------------------------------------------------------------------- | -------------------------------- |
 | `A`    | *append*     | Switch to Insert state at the end of the current line.                                        | `evil-append-line`               |
 | `B`    | *back*       | Move the cursor to the beginning of the COUNT-th previous WORD.                               | `evil-backward-WORD-begin`       |
 | `C`    | *change*     | Change to end of line.                                                                        | `evil-change-line`               |
@@ -78,7 +78,7 @@
 ### Numbers
 
 | Key   | Mnemonic | Description                                           | Function                                        |
-| :---: | -------- | ----------------------------------------------------- | ------------------------                        |
+| :---: | -------- | ----------------------------------------------------- | ----------------------------------------------- |
 | `0`   | *0*      | Move the cursor to the beginning of the current line. | `evil-digit-argument-or-evil-beginning-of-line` |
 | `1`   | *1*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
 | `2`   | *2*      | Part of the numeric argument for the next command.    | `digit-argument`                                |
@@ -92,37 +92,37 @@
 
 ### Punctuation
 
-| Key    | Mnemonic | Description                                                     | Function                 |
-| ------ | -------- | --------------------------------------------------------------- | ------------------------ |
-| !      |          |                                                                 |                          |
-| "      |          |                                                                 |                          |
-| #      |          |                                                                 |                          |
-| $      |          |                                                                 |                          |
-| %      |          |                                                                 |                          |
-| &      |          |                                                                 |                          |
-| '      |          |                                                                 |                          |
-| (      |          |                                                                 |                          |
-| (pipe) |          |                                                                 |                          |
-| )      |          |                                                                 |                          |
-| +      |          |                                                                 |                          |
-| ,      |          |                                                                 |                          |
-| -      |          |                                                                 |                          |
-| .      |          |                                                                 |                          |
-| /      |          |                                                                 |                          |
-| :      |          |                                                                 |                          |
-| ;      |          |                                                                 |                          |
-| <      |          |                                                                 |                          |
-| =      |          |                                                                 |                          |
-| >      |          |                                                                 |                          |
-| ?      |          |                                                                 |                          |
-| @      |          | Execute keyboard macro MACRO, COUNT times.                      | `evil-execute-macro`     |
-| \*     |          |                                                                 |                          |
-| \[     |          |                                                                 |                          |
-| \\     |          |                                                                 |                          |
-| \]     |          |                                                                 |                          |
-| \_     |          |                                                                 |                          |
-| \`     |          |                                                                 |                          |
-| \{     |          |                                                                 |                          |
-| \}     |          |                                                                 |                          |
-| ^      |          |                                                                 |                          |
-| ~      |          |                                                                 |                          |
+| Key    | Mnemonic            | Description                                                                                  | Function                             |
+| :----: | ------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------ |
+| `!`    | *shell*             | Execute a shell command.                                                                     | `evil-shell-command`                 |
+| `@`    | *macro*             | Execute keyboard macro MACRO, COUNT times.                                                   | `evil-execute-macro`                 |
+| `#`    | *find previous*     | Go to the previous occurrence of symbol under point with `auto-highlight-symbol`             | `spacemacs/enter-ahs-backward`       |
+| `^`    | *bol*               | Move the cursor to the first non-blank character of the current line.                        | `evil-first-non-blank`               |
+| `$`    | *eol*               | Move the cursor to the end of the current line.                                              | `evil-end-of-line`                   |
+| `%`    | *jump*              | Find the next item in this line after or under the cursor and jump to the corresponding one. | `evil-jump-item`                     |
+| `&`    | *repeat substitute* | Repeat last substitute command.                                                              | `evil-ex-repeat-substitute`          |
+| `*`    | *find next*         | Go to the next occurrence of symbol under point with `auto-highlight-symbol`                 | `spacemacs/enter-ahs-forward`        |
+| `(`    | *previous sentence* | Move to the previous COUNT-th beginning of a sentence or paragraph.                          | `evil-backward-sentence-begin`       |
+| `)`    | *next sentence*     | Move to the next COUNT-th beginning of a sentence or end of a paragraph.                     | `evil-forward-sentence-begin`        |
+| `-`    | *previous line*     | Move the cursor COUNT lines up on the first non-blank character.                             | `evil-previous-line-first-non-blank` |
+| `_`    | *line*              | Move the cursor COUNT-1 lines down on the first non-blank character.                         | `evil-next-line-1-first-non-blank`   |
+| `+`    | *next line*         | Move the cursor COUNT lines down on the first non-blank character.                           | `evil-next-line-first-non-blank`     |
+| `=`    | *indent*            | Indent text.                                                                                 | `evil-indent`                        |
+| `,`    | *major mode*        | (prefix)                                                                                     |                                      |
+| (pipe) |                     |                                                                                              |                                      |
+| `.`    |                     |                                                                                              |                                      |
+| `/`    |                     |                                                                                              |                                      |
+| `:`    |                     |                                                                                              |                                      |
+| `;`    |                     |                                                                                              |                                      |
+| `'`    |                     | Go to the line of the marker specified by CHAR.                                              | `evil-goto-mark-line`                |
+| `"`    |                     | Use REGISTER for the next command.                                                           | `evil-use-register`                  |
+| `<`    |                     |                                                                                              |                                      |
+| `>`    |                     |                                                                                              |                                      |
+| `?`    |                     |                                                                                              |                                      |
+| `[`    |                     |                                                                                              |                                      |
+| `\`    |                     |                                                                                              |                                      |
+| `]`    |                     |                                                                                              |                                      |
+| `\``   |                     |                                                                                              |                                      |
+| `{`    |                     |                                                                                              |                                      |
+| `}`    |                     |                                                                                              |                                      |
+| `~`    |                     |                                                                                              |                                      |
