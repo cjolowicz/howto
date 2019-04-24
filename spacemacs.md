@@ -24,11 +24,11 @@
 | e      | *end*        | Move the cursor to the end of the COUNT-th next word.           | `evil-forward-word-end`    |
 | f      | *find*       | Move to the next COUNT-th occurrence of CHAR.                   | `evil-find-char`           |
 | g      | *goto*       | (prefix)                                                        |                            |
-| h      |              | Move cursor to the left by COUNT characters.                    | `evil-backward-char`       |
+| h      | LEFT         | Move cursor to the left by COUNT characters.                    | `evil-backward-char`       |
 | i      | *insert*     | Switch to Insert state just before point.                       | `evil-insert`              |
-| j      |              | Move the cursor COUNT lines down.                               | `evil-next-line`           |
-| k      |              | Move the cursor COUNT lines up.                                 | `evil-previous-line`       |
-| l      |              | Move cursor to the right by COUNT characters.                   | `evil-forward-char`        |
+| j      | DOWN         | Move the cursor COUNT lines down.                               | `evil-next-line`           |
+| k      | UP           | Move the cursor COUNT lines up.                                 | `evil-previous-line`       |
+| l      | RIGHT        | Move cursor to the right by COUNT characters.                   | `evil-forward-char`        |
 | m      | *mark*       | Set the marker denoted by CHAR to position POS.                 | `evil-set-marker`          |
 | n      | *next*       | Goes to the next occurrence.                                    | `evil-ex-search-next`      |
 | o      | *open*       | Insert a new line below point and switch to Insert state.       | `evil-open-below`          |
@@ -55,11 +55,11 @@
 | E      | *end*        | Move the cursor to the end of the COUNT-th next WORD.                                         | `evil-forward-WORD-end`          |
 | F      | *find*       | Move to the previous COUNT-th occurrence of CHAR.                                             | `evil-find-char-backward`        |
 | G      | *goto*       | Go to the first non-blank character of line COUNT.                                            | `evil-goto-line`                 |
-| H      |              | Move the cursor to line COUNT from the top of the window on the first non-blank character.    | `evil-window-top`                |
+| H      | TOP          | Move the cursor to line COUNT from the top of the window on the first non-blank character.    | `evil-window-top`                |
 | I      | *insert*     | Switch to insert state at beginning of current line.                                          | `evil-insert-line`               |
 | J      | *join*       | Join the selected lines.                                                                      | `evil-join`                      |
 | K      | *keyword*    | Look up the keyword at point.                                                                 | `evil-lookup`                    |
-| L      |              | Move the cursor to line COUNT from the bottom of the window on the first non-blank character. | `evil-window-bottom`             |
+| L      | BOTTOM       | Move the cursor to line COUNT from the bottom of the window on the first non-blank character. | `evil-window-bottom`             |
 | M      | *middle*     | Move the cursor to the middle line in the window on the first non-blank character.            | `evil-window-middle`             |
 | N      | *next*       | Goes the the previous occurrence.                                                             | `evil-ex-search-previous`        |
 | O      | *open*       | Insert a new line above point and switch to Insert state.                                     | `evil-open-above`                |
@@ -70,10 +70,10 @@
 | T      | *to*         | Move before the previous COUNT’th occurrence of CHAR.                                         | `evil-find-char-to-backward`     |
 | U      |              | (undefined)                                                                                   |                                  |
 | V      | *visual*     | Linewise selection.                                                                           | `evil-visual-line`               |
-| W      |              |                                                                                               |                                  |
-| X      |              |                                                                                               |                                  |
-| Y      |              |                                                                                               |                                  |
-| Z      |              |                                                                                               |                                  |
+| W      | *word*       | Move the cursor to the beginning of the COUNT-th next WORD.                                   | `evil-forward-WORD-begin`        |
+| X      | *cross*      | Delete previous character.                                                                    | `evil-delete-backward-char`      |
+| Y      | *yank*       | Saves whole lines into the kill-ring.                                                         | `evil-yank-line`                 |
+| Z      | *quit*       | (prefix)                                                                                      |                                  |
 
 ### Numbers
 
