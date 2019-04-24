@@ -4,11 +4,12 @@
 **Table of Contents**
 
 - [spacemacs](#spacemacs)
-    - [Key bindings](#key-bindings)
+    - [Key bindings (normal state)](#key-bindings-normal-state)
         - [Lowercase letters](#lowercase-letters)
         - [Uppercase letters](#uppercase-letters)
         - [Numbers](#numbers)
         - [Punctuation](#punctuation)
+        - [Space and control characters](#space-and-control-characters)
 
 <!-- markdown-toc end -->
 ## Key bindings (normal state)
@@ -126,3 +127,12 @@
 | **`>`**    | *shift right*        | Shift text from BEG to END to the right.                                                     | `evil-shift-right`                   |
 | **`/`**    | *search forward*     | Starts a forward search.                                                                     | `evil-ex-search-forward`             |
 | **`?`**    | *search backward*    | Starts a backward search.                                                                    | `evil-ex-search-backward`            |
+
+### Space and control characters
+
+| Key       | Mnemonic     | Description                                                         | Function                   |
+| :-----:   | ------------ | ---------------------------------------------------------------     | -------------------------- |
+| **`SPC`** | *space*      | (prefix)                                                            |                            |
+| **`TAB`** | *tab*        | Indent the current line or region, or insert a tab, as appropriate. | `indent-for-tab-command`   |
+| **`RET`** | *return*     | Move the cursor COUNT lines down.                                   | `evil-ret`                 |
+| **`BCK`** | *back*       | Move cursor to the left by COUNT characters.                        | `evil-backward-char`       |
